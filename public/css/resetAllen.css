@@ -7,7 +7,7 @@
 
 /* typography */
 :root {
-    --color-text: #fff;
+    --color-text: rgb(0, 0, 0);
     --first-type: Helvetica, Arial, sans-serif;
     /* --second-type: Verdana; */
 }

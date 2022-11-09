@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('content')
-    <div class="row">
+    <div class="row header-container">
         <div class="col">
             <h1>POST-IT</h1>
         </div>
@@ -12,14 +12,14 @@
                     <div class="card-body">
                       <h5 class="card-title">{{ $note->title }}</h5>
                       <p class="card-text">{{ $note->content }}</p>
-                      <a href="{{ route('destroy.note', $note) }}" class="card-link">Delete</a>
+                      <a href="{{ route('destroy.note', $note) }}" class="card-link mt-3">Delete</a>
                     </div>
                   </div>
             </div>
         @endforeach
     </div>
 
-    <a data-bs-toggle="modal" data-bs-target="#exampleModal">Add Note</a>
+    <a class="btn-float" data-bs-toggle="modal" data-bs-target="#exampleModal">+</a>
 
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
