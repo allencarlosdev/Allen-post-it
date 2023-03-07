@@ -1,37 +1,37 @@
-:root{
-    --header-post-it:#ffb901;
-    --body-post-it:#fef3b5;
+:root {
+    --header-post-it: #ffb901;
+    --body-post-it: #fef3b5;
     --background-card: #fff;
     --letters-card: #000;
-    --shadow-card:rgba(33,33,33,0.5);
-    --shadow-hover-card: rgba(0,0,0,0.7);
-    --button-color:#52b354;
+    --shadow-card: rgba(33, 33, 33, 0.5);
+    --shadow-hover-card: rgba(0, 0, 0, 0.7);
+    --button-color: #52b354;
     --button-delete: red;
-    --footer-color:#7171e4;
-    --sky-color:linear-gradient(to bottom, #90dffe 0%,#38a3d1 100%);
+    --footer-color: #7171e4;
+    --sky-color: linear-gradient(to bottom, #90dffe 0%, #38a3d1 100%);
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     background: var(--sky-color);
     position: relative;
     justify-content: center;
 }
-.container{
+.container {
     background-color: var(--body-post-it);
     border-radius: 2rem;
 }
 
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
     background-color: var(--header-post-it);
     height: 3rem;
 }
 
-.card{
-    font-family: 'Permanent Marker', sans-serif, Arial, Helvetica;
+.card {
+    font-family: "Permanent Marker", sans-serif, Arial, Helvetica;
     background-color: var(--background-card);
     color: var(--letters-card);
     padding: 1rem;
@@ -42,33 +42,33 @@ body{
     -moz-box-shadow: 0.313rem 0.313rem 0.6rem var(--shadow-card);
     transform: rotate(-10deg);
 }
-.card-title{
+.card-title {
     font-weight: bold;
 }
 
-.card-link{
+.card-link {
     color: var(--button-delete);
 }
-.card-link:hover{
+.card-link:hover {
     color: var(--button-delete);
     text-decoration: underline;
 }
 
 .card:hover,
-.card:focus{
+.card:focus {
     box-shadow: 0.6rem 0.6rem 0.6rem var(--shadow-hover-card);
     -webkit-box-shadow: 0.6rem 0.6rem 0.6rem var(--shadow-hover-card);
     -moz-box-shadow: 0.6rem 0.6rem 0.6rem var(--shadow-hover-card);
-    -webkit-transform:scale(1.3);
-    -moz-transform:scale(1.3);
-    transform:scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
     position: relative;
     cursor: pointer;
     transition: 0.5s;
     z-index: 2;
 }
 
-.btn-float{
+.btn-float {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,18 +83,18 @@ body{
     bottom: 8rem;
     right: 3rem;
     transform: all 0.3s ease;
-    box-shadow: 0 0 0.10rem 0 var(--shadow-hover-card);
-    -webkit-box-shadow: 0 0 0.10rem 0 var(--shadow-hover-card);
-    -moz-box-shadow: 0 0 0.10rem 0 var(--shadow-hover-card);
+    box-shadow: 0 0 0.1rem 0 var(--shadow-hover-card);
+    -webkit-box-shadow: 0 0 0.1rem 0 var(--shadow-hover-card);
+    -moz-box-shadow: 0 0 0.1rem 0 var(--shadow-hover-card);
     cursor: pointer;
 }
-.btn-float:hover{
+.btn-float:hover {
     transform: scale(1.3);
     color: var(--background-card);
     transition: all 0.5s;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     background-color: var(--footer-color);
@@ -106,25 +106,32 @@ body{
     height: 5rem;
 }
 
-.footer__social{
+.footer__social {
     display: flex;
 }
-.footer__link{
+.footer__link {
     margin-right: 1.5rem;
     font-size: 2rem;
     color: var(--background-card);
 }
 
-.footer__link:hover{
+.footer__link:hover {
     color: var(--background-card);
     transform: scale(1.3);
     transition: all 0.5s;
 }
 .fa:hover,
-.fab:hover{
+.fab:hover {
     color: var(--background-card);
 }
 
-.copyright{
+.copyright {
     color: var(--background-card);
+}
+
+/* Design mobile */
+@media screen and (max-width: 400px) {
+    .row-responsive {
+        margin-bottom: 6rem;
+    }
 }

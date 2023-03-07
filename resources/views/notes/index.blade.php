@@ -5,7 +5,7 @@
             <h1>POST-IT</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row row-responsive">
         @foreach($notes as $key => $note)
             <div class="col-lg-4 mt-4">
                 <div class="card">
